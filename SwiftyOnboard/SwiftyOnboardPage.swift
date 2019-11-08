@@ -42,6 +42,7 @@ open class SwiftyOnboardPage: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = UIColor.white
         setUp()
     }
     
@@ -61,10 +62,10 @@ open class SwiftyOnboardPage: UIView {
         
         let margin = self.layoutMarginsGuide
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leftAnchor.constraint(equalTo: margin.leftAnchor, constant: 30).isActive = true
-        imageView.rightAnchor.constraint(equalTo: margin.rightAnchor, constant: -30).isActive = true
-        imageView.topAnchor.constraint(equalTo: margin.topAnchor, constant: 10).isActive = true
-        imageView.heightAnchor.constraint(equalTo: margin.heightAnchor, multiplier: 0.5).isActive = true
+        imageView.leftAnchor.constraint(equalTo: margin.leftAnchor, constant: 0).isActive = true
+        imageView.rightAnchor.constraint(equalTo: margin.rightAnchor, constant: 0).isActive = true
+        imageView.topAnchor.constraint(equalTo: margin.topAnchor, constant: 0).isActive = true
+        imageView.heightAnchor.constraint(equalTo: margin.heightAnchor, multiplier: 1).isActive = true
         
         self.addSubview(title)
         title.translatesAutoresizingMaskIntoConstraints = false
